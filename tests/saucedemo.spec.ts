@@ -552,3 +552,9 @@ test.describe('Advanced Data Driven Checkout Tests', () => {
     });
 
 });
+
+test('Verify Login Page Title', async ({ page }) => {
+    await page.goto('https://www.saucedemo.com/');
+
+    await expect(page).toHaveTitle('Swag Labs');
+});
